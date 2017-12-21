@@ -1,0 +1,184 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.yiqi.choose"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 7
+        versionName "1.1.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                GETUI_APP_ID : "qX0beTlSDn85yRRspyN3p",
+                GETUI_APP_KEY : "54jOwkHjYK9U81NXHqpp06",
+                GETUI_APP_SECRET : "bzqf7Gqt5c5A6m0juacyv7"
+        ]
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors{
+        gt302373{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"gt302373"]
+        }
+        gt422005{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"gt422005"]
+        }
+        gt356968{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"gt356968"]
+        }
+        BAIDU{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"BAIDU"]
+        }
+        SLL{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"SLL"]
+        }
+        ANZHI{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"ANZHI"]
+        }
+        XIAOMI{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"XIAOMI"]
+        }
+        APPSHARE{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"APPSHARE"]
+        }
+        YOUYI{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"YOUYI"]
+        }
+        JIFENG{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"JIFENG"]
+        }
+        MUANT{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"MUANT"]
+        }
+        WANDJ{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"WANDJ"]
+        }
+
+        QQM{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"QQM"]
+        }
+        QQMTG{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"QQMTG"]
+        }
+
+        HUAWEI{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"HUAWEI"]
+        }
+        LENOVO{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"LENOVO"]
+        }
+
+        WOMALL{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"WOMALL"]
+        }
+
+        LENOVO{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"LENOVO"]
+        }
+
+        MEIZU{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"MEIZU"]
+        }
+
+        TAOBAO{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"TAOBAO"]
+        }
+        SOGO{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"SOGO"]
+        }
+        OPPO{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"OPPO"]
+        }
+        JINLI{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"JINLI"]
+        }
+        VIVO{
+            manifestPlaceholders=[UMENG_CHANNEL_VALUE:"VIVO"]
+        }
+
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/GetuiSDK2.10.2.0.jar')
+    //    //fastjson
+    compile 'com.alibaba:fastjson:1.2.9'
+    //    //    //支付
+    compile 'com.alibaba.alipay:alipaySingle:20160825@jar'
+    //    //
+    //    //登陆
+    //    compile 'com.ali.auth.sdk:alibabauth_core:1.4.3@jar'
+    //    compile 'com.ali.auth.sdk:alibabauth_ui:1.4.3@aar'
+    //    compile 'com.ali.auth.sdk:alibabauth_ext:1.4.3@jar'
+    //登陆
+    compile 'com.ali.auth.sdk:alibabauth_core:1.1.4@jar'
+    compile 'com.ali.auth.sdk:alibabauth_ui:1.1.4@aar'
+    compile 'com.ali.auth.sdk:alibabauth_ext:1.1.4@jar'
+    //【可选】仅供特殊合作伙伴使用
+    // compile 'com.ali.auth.sdk:alibabauth_accountlink:1.1.4@jar'
+    //安全基础
+    compile 'com.taobao.android:securityguardaar3:5.1.81@aar'
+    //【可选】安全高级，如使用了发放红包、优惠券高级功能，则必须引入
+    compile 'com.taobao.android:securitybodyaar3:5.1.25@aar'
+    //Mtop网关
+    compile 'com.taobao.android:mtopsdk_allinone_open:1.2.2.4@jar'
+    //applink
+    compile 'com.alibaba.sdk.android:alibc_link_partner:1.1.0.0'
+    //UT
+    compile 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
+    compile 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
+    //联盟SDK
+    compile 'com.alimama.tunion.sdk:tuniontradesdk:0.3.2'
+    //电商SDK
+    compile 'com.alibaba.sdk.android:alibc_trade_common:3.1.1.99'
+    compile 'com.alibaba.sdk.android:alibc_trade_biz:3.1.1.99'
+    compile 'com.alibaba.sdk.android:alibc_trade_sdk:3.1.1.99'
+    compile files('libs/gson-2.3.1.jar')
+    compile project(':pagerslidingtabstrip')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //  compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    //
+    //    //检测内存泄漏的开源项目
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //黄油刀
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile files('libs/MobCommons-2017.0914.1125.jar')
+    compile files('libs/MobTools-2017.0914.1125.jar')
+    compile files('libs/ShareSDK-Core-3.1.0.jar')
+    compile files('libs/ShareSDK-QQ-3.1.0.jar')
+    compile files('libs/ShareSDK-QZone-3.1.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.1.0.jar')
+    compile project(':xrecyclerview')
+    compile('com.alibaba.android:vlayout:1.2.6@aar') {
+        transitive = true
+    }
+    compile project(':cptr')
+}

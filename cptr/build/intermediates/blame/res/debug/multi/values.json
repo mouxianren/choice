@@ -1,0 +1,506 @@
+[
+    {
+        "outputFile": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 934,
+                    "endColumn": 74,
+                    "endOffset": 1004
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 327,
+                        "endColumn": 74,
+                        "endOffset": 397
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 1009,
+                    "endColumn": 75,
+                    "endOffset": 1080
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 402,
+                        "endColumn": 75,
+                        "endOffset": 473
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 1085,
+                    "endColumn": 71,
+                    "endOffset": 1152
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 478,
+                        "endColumn": 71,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1157,
+                    "endColumn": 65,
+                    "endOffset": 1218
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 65,
+                        "endOffset": 611
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1223,
+                    "endColumn": 60,
+                    "endOffset": 1279
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 60,
+                        "endOffset": 112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1284,
+                    "endColumn": 52,
+                    "endOffset": 1332
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 591,
+                        "endColumn": 57,
+                        "endOffset": 644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1337,
+                    "endColumn": 55,
+                    "endOffset": 1388
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 411,
+                        "endColumn": 60,
+                        "endOffset": 467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1393,
+                    "endColumn": 54,
+                    "endOffset": 1443
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 531,
+                        "endColumn": 59,
+                        "endOffset": 586
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1448,
+                    "endColumn": 49,
+                    "endOffset": 1493
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 117,
+                        "endColumn": 49,
+                        "endOffset": 162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1498,
+                    "endColumn": 62,
+                    "endOffset": 1556
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 167,
+                        "endColumn": 62,
+                        "endOffset": 225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1561,
+                    "endColumn": 59,
+                    "endOffset": 1616
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 346,
+                        "endColumn": 59,
+                        "endOffset": 401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1621,
+                    "endColumn": 54,
+                    "endOffset": 1671
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 54,
+                        "endOffset": 341
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1676,
+                    "endColumn": 60,
+                    "endOffset": 1732
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 230,
+                        "endColumn": 60,
+                        "endOffset": 286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1737,
+                    "endColumn": 53,
+                    "endOffset": 1786
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 472,
+                        "endColumn": 58,
+                        "endOffset": 526
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 934,
+                    "endColumn": 74,
+                    "endOffset": 1004
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 558,
+                        "endColumn": 74,
+                        "endOffset": 628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 1009,
+                    "endColumn": 65,
+                    "endOffset": 1070
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 861,
+                        "endColumn": 65,
+                        "endOffset": 922
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 1075,
+                    "endColumn": 60,
+                    "endOffset": 1131
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 60,
+                        "endOffset": 112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1136,
+                    "endColumn": 52,
+                    "endOffset": 1184
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 591,
+                        "endColumn": 57,
+                        "endOffset": 644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1189,
+                    "endColumn": 55,
+                    "endOffset": 1240
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 411,
+                        "endColumn": 60,
+                        "endOffset": 467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1245,
+                    "endColumn": 54,
+                    "endOffset": 1295
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 531,
+                        "endColumn": 59,
+                        "endOffset": 586
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1300,
+                    "endColumn": 49,
+                    "endOffset": 1345
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 117,
+                        "endColumn": 49,
+                        "endOffset": 162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1350,
+                    "endColumn": 62,
+                    "endOffset": 1408
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 167,
+                        "endColumn": 62,
+                        "endOffset": 225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1413,
+                    "endColumn": 59,
+                    "endOffset": 1468
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 346,
+                        "endColumn": 59,
+                        "endOffset": 401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1473,
+                    "endColumn": 54,
+                    "endOffset": 1523
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 54,
+                        "endOffset": 341
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1528,
+                    "endColumn": 60,
+                    "endOffset": 1584
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 230,
+                        "endColumn": 60,
+                        "endOffset": 286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1589,
+                    "endColumn": 53,
+                    "endOffset": 1638
+                },
+                "from": {
+                    "file": "/Users/moumou/Downloads/CommonPullToRefresh-master/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 472,
+                        "endColumn": 58,
+                        "endOffset": 526
+                    }
+                }
+            }
+        ]
+    }
+]

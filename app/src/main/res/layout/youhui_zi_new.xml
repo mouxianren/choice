@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/home_rl_arrow"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.chanven.lib.cptr.PtrClassicFrameLayout
+            android:id="@+id/test_recycler_view_frame"
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="700"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.8">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:cacheColorHint="#00000000">
+            </android.support.v7.widget.RecyclerView>
+        </com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+
+        <ImageView
+            android:id="@+id/home_arraw"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dip"
+            android:layout_marginRight="35dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/uparrow"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/home_zi_nogoods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130dip"
+            android:layout_height="95dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/nogoodsnew"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="暂无商品"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_zi_nowefi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="160dip"
+            android:layout_height="135dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/new_nowife"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dip"
+            android:text="网络未连接"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请检查网络连接或网络访问权限"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/home_fragment_tv_retro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ttg_red_msg_shape"
+            android:paddingBottom="8dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:paddingTop="8dip"
+            android:text="点击重试"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cp_rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.chanven.lib.cptr.circle.CircularProgressView
+            android:id="@+id/cp_image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true"
+            app:angleAnimationDurationMillis="@integer/circular_default_angleAnimationDurationMillis"
+            app:borderWidth="@dimen/circular_default_border_width"
+            app:colorSequence="@array/circular_default_color_sequence"
+            app:sweepAnimationDurationMillis="@integer/circular_default_sweepAnimationDuration"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

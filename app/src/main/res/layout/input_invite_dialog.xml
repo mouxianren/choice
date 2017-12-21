@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/ttg_white_msg_shape"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="0dp" >
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:gravity="center"
+            android:text="输入邀请码"
+            android:textColor="@color/newziblack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:id="@+id/et_hint_invite"
+            android:textColorHint="@color/newzidoblegrey"
+            android:hint="请输入推荐人的邀请码"
+            android:textSize="15sp"
+            android:textColor="@color/newzigrey"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/phoneline"
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="8dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:clickable="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:padding="6dip"
+            android:background="@drawable/ttg_red_msg_shape"
+            android:id="@+id/dialog_tv_makesure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:clickable="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:padding="6dip"
+            android:background="@drawable/ttg_grey_msg_shap_splash"
+            android:id="@+id/dialog_tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="跳过"
+            android:textColor="@color/newzigrey"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

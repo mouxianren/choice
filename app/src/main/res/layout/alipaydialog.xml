@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/ttg_white_msg_shape"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="0dp" >
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:gravity="center"
+            android:text="添加/修改支付宝账户"
+            android:textColor="@color/newziblack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:id="@+id/et_hint_alipay"
+            android:textColorHint="@color/newzidoblegrey"
+            android:hint="请输入支付宝"
+            android:textSize="15sp"
+            android:textColor="@color/newzigrey"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/phoneline"
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:background="@color/redline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="取消"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/redline" />
+
+        <TextView
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="确定"
+            android:textColor="@color/bulebutton"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

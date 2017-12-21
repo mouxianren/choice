@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/rl"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F5F5F5"
+              android:orientation="vertical" >
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/home_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/home_temai"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:src="@mipmap/home_jinxuan"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/home_baoyou"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:src="@mipmap/home_baoyou"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/home_ll_text"
+        android:background="@color/background"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="7dip"
+            android:textColor="#FFe82c2c"
+            android:text="精选好货 每日上新"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

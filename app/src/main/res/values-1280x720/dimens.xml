@@ -1,0 +1,35 @@
+<resources>
+
+    <dimen name="firsthigh">48dip</dimen>
+    
+          <dimen name="mainsmallhign">147dip</dimen>
+     <dimen name="mainsmallimageh">84dip</dimen>
+      <dimen name="mainsmallimagew">84dip</dimen>
+      <dimen name="mainsmallimagehot">35dip</dimen>
+  
+ <dimen name="mainpopuhign">13dip</dimen>
+  <dimen name="gotophigh">52dip</dimen>
+  
+     <dimen name="itemhigh">510dip</dimen>
+           <dimen name="itempicthigh">360dip</dimen>
+           
+             <dimen name="f4itemhigh">225dip</dimen>
+             <dimen name="f4chahigh">46dip</dimen>
+              <dimen name="f4chahigh1">38dip</dimen>
+                 <dimen name="f4dizhi">105dip</dimen>
+                 <dimen name="f4zhifu">42dip</dimen>
+                  <dimen name="f4zhifubao">55dip</dimen>
+                  <dimen name="f4jiaoqian">60dip</dimen>
+                   <dimen name="schigh">210dip</dimen>
+                        <dimen name="inputhigh">55dip</dimen>
+            <dimen name="closehigh">25dip</dimen>
+                     <dimen name="textjiange">14dip</dimen>
+                       <dimen name="youhui">73dip</dimen>
+                          <dimen name="youhuitext">12sp</dimen>
+                             <dimen name="youhuitext1">15sp</dimen>
+                               <dimen name="youhuipost">60dip</dimen>
+    <dimen name="splash_title">25dip</dimen>
+    <dimen name="choicesexhigh">85dip</dimen>
+    <dimen name="choicesextop">20dip</dimen>
+    <dimen name="erweima">180dip</dimen>
+</resources>

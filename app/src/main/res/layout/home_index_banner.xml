@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="280dip"
+        >
+        <com.yiqi.choose.view.MyViewPage2
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </com.yiqi.choose.view.MyViewPage2>
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </FrameLayout>
+    <!--
+    <View
+        android:id="@+id/view_1"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+        -->
+
+</LinearLayout>

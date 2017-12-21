@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/red">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="11.36dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:src="@mipmap/arrow_2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_three_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="关于挑一挑"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="0dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dip"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="68dip"
+                    android:layout_height="68dip"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_big"/>
+
+                <TextView
+                    android:id="@+id/me_abus_tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="V1.0"
+                    android:textColor="@color/newzidoblegrey"
+                    android:textSize="15sp"/>
+
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:id="@+id/about_tiao_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="20dip"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="28dip"
+                            android:layout_height="27dip"
+                            android:src="@mipmap/tiao_more"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="好多"
+                                android:textColor="@color/newziblack"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dip"
+                                android:text="每日上新数万款，全网商品皆可买"
+                                android:textColor="@color/newzidoblegrey"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="10dip"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="28dip"
+                            android:layout_height="27dip"
+                            android:src="@mipmap/tiao_wu"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="好物"
+                                android:textColor="@color/newziblack"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dip"
+                                android:text="精选大牌，更有淘抢购、聚划算活动，领券再减"
+                                android:textColor="@color/newzidoblegrey"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="10dip"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="28dip"
+                            android:layout_height="27dip"
+                            android:src="@mipmap/tiao_price"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="好价"
+                                android:textColor="@color/newziblack"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dip"
+                                android:text="全站商品领券再减，不用比价，已是全网最低"
+                                android:textColor="@color/newzidoblegrey"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="10dip"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="28dip"
+                            android:layout_height="27dip"
+                            android:src="@mipmap/tiao_tui"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="好推"
+                                android:textColor="@color/newziblack"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dip"
+                                android:text="超值热销实时推荐榜，跟着买、不会错"
+                                android:textColor="@color/newzidoblegrey"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:padding="10dip"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="亿启(杭州)网络科技有限公司"
+        android:textColor="@color/newzidoblegrey"
+        android:textSize="13sp"/>
+</LinearLayout>

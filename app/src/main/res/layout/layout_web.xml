@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/red" >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/close1" />
+
+        <TextView
+
+            android:maxLength="20"
+            android:id="@+id/appTitle_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="粉丝福利购"
+            android:ellipsize="end"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmallTitle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/appTitle_txt"
+            android:visibility="invisible" />
+
+
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="11.36dip"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/arrow_2" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webviewContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_below="@id/rl_title" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/home_jinxuan_ll_noweb"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/new_nowife"
+            android:scaleType="fitXY"
+            android:layout_width="160dip"
+            android:layout_height="135dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"
+            android:text="网络未连接"
+            android:layout_marginTop="55dip"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"
+            android:text="请检查网络连接或网络访问权限"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/home_fragment_tv_retro"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:layout_marginTop="25dp"
+            android:text="点击重试"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/ttg_red_msg_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_jinxuan_rl_pg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_red"
+            android:indeterminateDuration="1500"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

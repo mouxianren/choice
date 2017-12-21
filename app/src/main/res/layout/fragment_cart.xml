@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/background"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/red" >
+
+
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:text="购物车"
+                android:textSize="17sp" />
+
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view_f4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/rl_title"
+        android:background="#B2B2B2" />
+
+<LinearLayout
+    android:id="@+id/cart_fragment_nologin"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/new_cart"
+            android:layout_width="100dip"
+            android:layout_height="113dip"/>
+        <TextView
+            android:layout_marginTop="17dip"
+            android:textColor="@color/zigrey"
+            android:textSize="13sp"
+            android:text="登录购物车"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/zigrey"
+            android:textSize="13sp"
+            android:text="收获专属优惠"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/cartfragment_tv_gocart"
+            android:layout_marginTop="15dp"
+            android:text="淘宝授权登陆"
+            android:textColor="@color/white"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:textSize="16sp"
+            android:background="@drawable/ttg_red_msg_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/cart_fragment_login"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/nogoods"
+                android:layout_width="105dip"
+                android:layout_height="98dp"/>
+            <TextView
+                android:layout_marginTop="7dip"
+                android:textColor="@color/zigrey"
+                android:textSize="13sp"
+                android:text="登录成功"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:clickable="true"
+                android:id="@+id/cartfragment_tv_gocart_sucess"
+                android:layout_marginTop="15dp"
+                android:text="查看购物车"
+                android:textColor="@color/white"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="8dip"
+                android:paddingBottom="8dip"
+                android:textSize="16sp"
+                android:background="@drawable/ttg_red_msg_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

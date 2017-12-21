@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cptr/cptr.iml" filepath="$PROJECT_DIR$/cptr/cptr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dianshang/dianshang.iml" filepath="$PROJECT_DIR$/dianshang/dianshang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagerslidingtabstrip/pagerslidingtabstrip.iml" filepath="$PROJECT_DIR$/pagerslidingtabstrip/pagerslidingtabstrip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/挑一挑.iml" filepath="$PROJECT_DIR$/挑一挑.iml" />
+    </modules>
+  </component>
+</project>

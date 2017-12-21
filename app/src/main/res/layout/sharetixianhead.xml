@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_modie_alipy"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="13dp"
+        android:paddingTop="10dip"
+        android:text="填写支付宝账户"
+        android:textColor="#f44336"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_modie_alipy"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_alipy"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dip"
+            android:textSize="15sp"
+            android:clickable="false"
+            android:layout_marginLeft="15dip"
+            android:textColor="@color/newziblack"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginRight="15dip"
+            android:src="@mipmap/alipay_modie"
+            android:layout_width="22dip"
+            android:layout_height="22dip"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="#f3f3f3"
+        />
+    <TextView
+  android:paddingTop="10dip"
+  android:paddingBottom="20dip"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="账户余额将于每月28日内自动提现至您的支付宝"
+        android:textColor="@color/newzigrey"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:paddingBottom="17dip"
+        android:paddingTop="18dip"
+        android:text="提现/结算流水"
+        android:textColor="@color/newziblack"
+        android:textSize="15sp"/>
+</LinearLayout>

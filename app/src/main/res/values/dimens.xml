@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_height">56dp</dimen>
+    <dimen name="tab_div_height">1dp</dimen>
+
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="firsthigh">48dip</dimen>
+    <dimen name="mainsmallhign">142dip</dimen>
+    <dimen name="mainsmallimageh">93dip</dimen>
+    <dimen name="mainsmallimagew">93dip</dimen>
+    <dimen name="mainsmallimagehot">35dip</dimen>
+    <dimen name="mainpopuhign">10dip</dimen>
+    <dimen name="gotophigh">45dip</dimen>
+    <dimen name="itemhigh">450dip</dimen>
+    <dimen name="itempicthigh">300dip</dimen>
+    <dimen name="f4itemhigh">200dip</dimen>
+    <dimen name="f4chahigh">42dip</dimen>
+    <dimen name="f4chahigh1">33dip</dimen>
+    <dimen name="f4dizhi">95dip</dimen>
+    <dimen name="f4zhifu">37dip</dimen>
+    <dimen name="f4zhifubao">50dip</dimen>
+    <dimen name="f4jiaoqian">54dip</dimen>
+    <dimen name="schigh">165dip</dimen>
+    <dimen name="textjiange">12dip</dimen>
+    <dimen name="inputhigh">45dip</dimen>
+    <dimen name="closehigh">20dip</dimen>
+    <dimen name="youhui">60dip</dimen>
+    <dimen name="erweima">150dip</dimen>
+
+</resources>

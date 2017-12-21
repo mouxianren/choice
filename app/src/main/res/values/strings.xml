@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">挑一挑</string>
+
+
+
+
+   <string name="appurl" >http://jkjbyh.cn</string>
+   <string name="appurltest" >http://120.26.244.207/taoke-service/test</string>
+   <!--
+      <string name="appurl" >http://120.26.244.207/taoke-service</string>
+
+ <string name="appurl" >http://192.168.1.221:8080/taoke-service</string>
+   <string name="appurl" >http://120.26.244.207/taoke-service</string>
+  <string name="appurltest" >http://120.26.244.207/taoke-service/test</string>
+  <string name="appurl" >http://192.168.1.110:8090/taoke-service</string>
+  <string name="appurl" >http://120.26.244.207/taoke-service</string>
+
+     <string name="appurl" >http://192.168.1.145:8080/taoke-service</string>
+
+   <string name="appurl" >http://192.168.4.4:8080/taoke-service</string>
+     <string name="appurl" >http://192.168.4.12:8080/taoke-service</string>
+
+    <string name="appurl" >http://jkjbyh.cn</string>
+   <string name="appurl" >http://120.26.244.207/taoke-service</string>
+      <string name="appurl" >http://192.168.1.110:8090/service</string>
+     -->
+   <string name="shouye">首页</string>
+   <string name="youhui">优惠券</string>
+   <string name="type_item">分类</string>
+   <string name="shareincom">分享赚</string>
+   <string name="cart">购物车</string>
+   <string name="me">我的</string>
+   <string name="net">您的网络不给力，请检查更新!</string>
+   <string name="xlistview_header_hint_normal">下拉刷新</string>
+   <string name="xlistview_header_hint_ready">松开刷新数据</string>
+   <string name="xlistview_header_hint_loading">正在加载...</string>
+   <string name="xlistview_header_last_time">上次更新时间：</string>
+   <string name="xlistview_footer_hint_normal">查看更多</string>
+   <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+   <string name="textseach">如:\"360 鞋 男\"即可搜到你想要的商品</string>
+
+</resources>

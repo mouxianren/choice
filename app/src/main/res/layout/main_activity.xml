@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              tools:context="com.yiqi.choose.activity.MainAcitivity1">
+
+    <com.yiqi.choose.view.NoScrollViewPager
+        android:id="@+id/mainactivity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></com.yiqi.choose.view.NoScrollViewPager>
+
+    <android.support.design.widget.TabLayout
+        app:tabGravity="center"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dip"
+        android:id="@+id/mainactivity_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/firsthigh"
+        style="@style/CustomTab"
+        ></android.support.design.widget.TabLayout>
+
+
+
+</LinearLayout>

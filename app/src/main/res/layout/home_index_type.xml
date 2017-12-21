@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46.5dip"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/all_search_ll_quanbu"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/all_search_tv_quanbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:gravity="center"
+                    android:text="新品"
+                    android:clickable="false"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dip"
+                android:layout_marginTop="7dip"
+                android:background="@color/newline"
+                />
+
+            <LinearLayout
+                android:id="@+id/all_search_ll_seller"
+                android:layout_width="0dip"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@+id/all_search_tv_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="销量"
+                    android:textColor="@color/newzigrey"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dip"
+                android:layout_marginTop="7dip"
+                android:background="@color/newline"
+                />
+
+            <LinearLayout
+                android:id="@+id/all_search_ll_price"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/all_search_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="价格"
+                    android:textColor="@color/newzigrey"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/all_search_iv_price"
+                    android:layout_width="9dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:src="@mipmap/price_nor"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/newline"/>
+
+</LinearLayout>

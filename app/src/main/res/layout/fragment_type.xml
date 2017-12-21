@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:gravity="center"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/red"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+
+            android:id="@+id/home_fragment_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/home_youhui_top_shape"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_search"/>
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索商品"
+                android:textColor="@color/newzidoblegrey"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_f4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/rl_title"
+        android:background="#B2B2B2"/>
+
+    <LinearLayout
+        android:id="@+id/ll_havawife"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/tools_scrlllview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"/>
+
+        </ScrollView>
+
+        <com.yiqi.choose.view.NoScrollViewPager
+            android:id="@+id/goods_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/fragment_youhui_ll_nowife"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="160dip"
+            android:layout_height="135dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/new_nowife"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dip"
+            android:text="网络未连接"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请检查网络连接或网络访问权限"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/home_fragment_tv_retro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ttg_red_msg_shape"
+            android:paddingBottom="8dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:paddingTop="8dip"
+            android:text="点击重试"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ll_cp_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.chanven.lib.cptr.circle.CircularProgressView
+        android:id="@+id/cp_image"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_centerInParent="true"
+        app:angleAnimationDurationMillis="@integer/circular_default_angleAnimationDurationMillis"
+        app:borderWidth="@dimen/circular_default_border_width"
+        app:colorSequence="@array/circular_default_color_sequence"
+        app:sweepAnimationDurationMillis="@integer/circular_default_sweepAnimationDuration"/>
+    </RelativeLayout>
+</LinearLayout>

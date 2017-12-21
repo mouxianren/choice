@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APP邀请成功数(个)"
+                android:textColor="@color/newzigrey"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_invite_sucess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:text="0"
+                android:textColor="@color/newziblack"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:background="@color/redline"
+            />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昨日预估收入(元)"
+                android:textColor="@color/newzigrey"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_yestoday_mkmoeny"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:text="0"
+                android:textColor="@color/newziblack"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="@color/redline"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上月预估收入(元)"
+                android:textColor="@color/newzigrey"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_lastmonth_mkmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:text="0"
+                android:textColor="@color/newziblack"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:background="@color/redline"
+            />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月预估收入(元)"
+                android:textColor="@color/newzigrey"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_month_mkmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:text="0"
+                android:textColor="@color/newziblack"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="@color/redline"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:padding="15dip"
+        android:text="每月25日结算上月预估收入，本月预估收入则下月25日结算。"
+        android:textColor="@color/newzigrey"
+        android:textSize="10sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="#f6f6f6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:paddingBottom="17dip"
+        android:paddingTop="18dip"
+        android:text="推广流水"
+        android:textColor="@color/newziblack"
+        android:textSize="15sp"/>
+
+</LinearLayout>

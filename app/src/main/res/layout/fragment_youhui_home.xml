@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+              android:background="@color/background"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/red"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="7dip"
+            android:background="@drawable/home_youhui_top_shape"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:id="@+id/home_fragment_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+
+            <ImageView
+
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_search"/>
+            <TextView
+                android:id="@+id/tv_allnumber"
+                android:textSize="14sp"
+                android:textColor="@color/newzidoblegrey"
+                android:text="搜索商品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_f4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/rl_title"
+        android:background="#B2B2B2" />
+
+    <LinearLayout
+
+        android:id="@+id/home_fragment_pagersliding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.astuetz.PagerSlidingTabStripextends
+            android:id="@+id/youhui_tabs"
+            xmlns:itheima="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            itheima:pstsIndicatorColor="@color/tab_indicator_selected"
+            itheima:pstsSelectedTabTextColor="@color/tab_text_selected"
+            itheima:pstsSelectedTabTextSize="16sp"
+            itheima:pstsTabTextColor="@color/tab_text_normal"
+            itheima:pstsTabTextSize="14sp"
+            >
+        </com.astuetz.PagerSlidingTabStripextends>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/youhui_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragment_youhui_ll_nogoods"
+    android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/nogoods_1"
+            android:scaleType="fitXY"
+            android:layout_width="100dip"
+            android:layout_height="115dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/zigrey"
+            android:textSize="16sp"
+            android:text="暂无优惠券,请稍后再来"
+            android:layout_marginTop="35dip"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/fragment_youhui_bt_notice"
+            android:layout_marginTop="25dp"
+            android:text="提醒卖家上新"
+            android:paddingLeft="17dip"
+            android:paddingRight="17dip"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/ttg_red_msg_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/fragment_youhui_ll_nowife"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/new_nowife"
+            android:scaleType="fitXY"
+            android:layout_width="160dip"
+            android:layout_height="135dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"
+            android:text="网络未连接"
+            android:layout_marginTop="55dip"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/zigrey"
+            android:textSize="15sp"
+            android:text="请检查网络连接或网络访问权限"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/home_fragment_tv_retro"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:layout_marginTop="25dp"
+            android:text="点击重试"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/ttg_red_msg_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_youhui_rl_pb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_red"
+            android:indeterminateDuration="1500"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
