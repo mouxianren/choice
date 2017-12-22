@@ -8,7 +8,32 @@
 package com.chanven.lib.cptr.test;
 
 public final class R {
+    public static final class array {
+        public static final int circular_default_color_sequence=0x7f040000;
+    }
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int angleAnimationDurationMillis=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int borderWidth=0x7f010000;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int colorSequence=0x7f010001;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -16,11 +41,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int layoutManager=0x7f010009;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int ptr_content=0x7f010002;
+        public static final int layoutManager=0x7f01000e;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -28,7 +49,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ptr_duration_to_close=0x7f010005;
+        public static final int minSweepAngle=0x7f010004;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptr_content=0x7f010007;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -36,11 +61,19 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ptr_duration_to_close_header=0x7f010006;
+        public static final int ptr_duration_to_close=0x7f01000a;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ptr_duration_to_close_header=0x7f01000b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int ptr_header=0x7f010001;
+        public static final int ptr_header=0x7f010006;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -48,7 +81,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ptr_keep_header_when_refresh=0x7f010008;
+        public static final int ptr_keep_header_when_refresh=0x7f01000d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -56,7 +89,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ptr_pull_to_fresh=0x7f010007;
+        public static final int ptr_pull_to_fresh=0x7f01000c;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -64,7 +97,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ptr_ratio_of_header_height_to_refresh=0x7f010004;
+        public static final int ptr_ratio_of_header_height_to_refresh=0x7f010009;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -72,7 +105,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ptr_resistance=0x7f010003;
+        public static final int ptr_resistance=0x7f010008;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -80,7 +113,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ptr_rotate_ani_time=0x7f010000;
+        public static final int ptr_rotate_ani_time=0x7f010005;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -88,7 +121,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int reverseLayout=0x7f01000b;
+        public static final int reverseLayout=0x7f010010;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -96,7 +129,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spanCount=0x7f01000a;
+        public static final int spanCount=0x7f01000f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -104,44 +137,154 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int stackFromEnd=0x7f01000c;
+        public static final int stackFromEnd=0x7f010011;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int sweepAnimationDurationMillis=0x7f010002;
+    }
+    public static final class color {
+        public static final int circular_blue=0x7f050000;
+        public static final int circular_green=0x7f050001;
+        public static final int circular_red=0x7f050002;
+        public static final int circular_yellow=0x7f050003;
     }
     public static final class dimen {
-        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f040000;
-        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f040001;
-        public static final int item_touch_helper_swipe_escape_velocity=0x7f040002;
+        public static final int circular_default_border_width=0x7f060000;
+        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f060001;
+        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f060002;
+        public static final int item_touch_helper_swipe_escape_velocity=0x7f060003;
     }
     public static final class drawable {
         public static final int arrow=0x7f020000;
     }
     public static final class id {
-        public static final int item_touch_helper_previous_elevation=0x7f050000;
-        public static final int loadmore_default_footer_progressbar=0x7f050007;
-        public static final int loadmore_default_footer_tv=0x7f050008;
-        public static final int ptr_classic_header_rotate_view=0x7f050005;
-        public static final int ptr_classic_header_rotate_view_header_last_update=0x7f050004;
-        public static final int ptr_classic_header_rotate_view_header_text=0x7f050002;
-        public static final int ptr_classic_header_rotate_view_header_title=0x7f050003;
-        public static final int ptr_classic_header_rotate_view_progressbar=0x7f050006;
-        public static final int xlistview_header_content=0x7f050001;
+        public static final int cp_image=0x7f070007;
+        public static final int cp_image_head=0x7f070006;
+        public static final int item_touch_helper_previous_elevation=0x7f070000;
+        public static final int loadmore_default_footer_tv=0x7f070008;
+        public static final int ptr_classic_header_rotate_view=0x7f070005;
+        public static final int ptr_classic_header_rotate_view_header_last_update=0x7f070004;
+        public static final int ptr_classic_header_rotate_view_header_text=0x7f070002;
+        public static final int ptr_classic_header_rotate_view_header_title=0x7f070003;
+        public static final int xlistview_header_content=0x7f070001;
+    }
+    public static final class integer {
+        public static final int circular_default_angleAnimationDurationMillis=0x7f080000;
+        public static final int circular_default_miniSweepAngle=0x7f080001;
+        public static final int circular_default_sweepAnimationDuration=0x7f080002;
     }
     public static final class layout {
         public static final int cube_ptr_classic_default_header=0x7f030000;
         public static final int loadmore_default_footer=0x7f030001;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
-        public static final int cube_ptr_hours_ago=0x7f060001;
-        public static final int cube_ptr_last_update=0x7f060002;
-        public static final int cube_ptr_minutes_ago=0x7f060003;
-        public static final int cube_ptr_pull_down=0x7f060004;
-        public static final int cube_ptr_pull_down_to_refresh=0x7f060005;
-        public static final int cube_ptr_refresh_complete=0x7f060006;
-        public static final int cube_ptr_refreshing=0x7f060007;
-        public static final int cube_ptr_release_to_refresh=0x7f060008;
-        public static final int cube_ptr_seconds_ago=0x7f060009;
+        public static final int app_name=0x7f090000;
+        public static final int cube_ptr_hours_ago=0x7f090001;
+        public static final int cube_ptr_last_update=0x7f090002;
+        public static final int cube_ptr_minutes_ago=0x7f090003;
+        public static final int cube_ptr_pull_down=0x7f090004;
+        public static final int cube_ptr_pull_down_to_refresh=0x7f090005;
+        public static final int cube_ptr_refresh_complete=0x7f090006;
+        public static final int cube_ptr_refreshing=0x7f090007;
+        public static final int cube_ptr_release_to_refresh=0x7f090008;
+        public static final int cube_ptr_seconds_ago=0x7f090009;
     }
     public static final class styleable {
+        /** Attributes that can be used with a CircularProgressView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircularProgressView_angleAnimationDurationMillis com.chanven.lib.cptr.test:angleAnimationDurationMillis}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircularProgressView_borderWidth com.chanven.lib.cptr.test:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircularProgressView_colorSequence com.chanven.lib.cptr.test:colorSequence}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircularProgressView_minSweepAngle com.chanven.lib.cptr.test:minSweepAngle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircularProgressView_sweepAnimationDurationMillis com.chanven.lib.cptr.test:sweepAnimationDurationMillis}</code></td><td></td></tr>
+           </table>
+           @see #CircularProgressView_angleAnimationDurationMillis
+           @see #CircularProgressView_borderWidth
+           @see #CircularProgressView_colorSequence
+           @see #CircularProgressView_minSweepAngle
+           @see #CircularProgressView_sweepAnimationDurationMillis
+         */
+        public static final int[] CircularProgressView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chanven.lib.cptr.test.R.attr#angleAnimationDurationMillis}
+          attribute's value can be found in the {@link #CircularProgressView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chanven.lib.cptr.test:angleAnimationDurationMillis
+        */
+        public static final int CircularProgressView_angleAnimationDurationMillis = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.chanven.lib.cptr.test.R.attr#borderWidth}
+          attribute's value can be found in the {@link #CircularProgressView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chanven.lib.cptr.test:borderWidth
+        */
+        public static final int CircularProgressView_borderWidth = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.chanven.lib.cptr.test.R.attr#colorSequence}
+          attribute's value can be found in the {@link #CircularProgressView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.chanven.lib.cptr.test:colorSequence
+        */
+        public static final int CircularProgressView_colorSequence = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.chanven.lib.cptr.test.R.attr#minSweepAngle}
+          attribute's value can be found in the {@link #CircularProgressView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chanven.lib.cptr.test:minSweepAngle
+        */
+        public static final int CircularProgressView_minSweepAngle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.chanven.lib.cptr.test.R.attr#sweepAnimationDurationMillis}
+          attribute's value can be found in the {@link #CircularProgressView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chanven.lib.cptr.test:sweepAnimationDurationMillis
+        */
+        public static final int CircularProgressView_sweepAnimationDurationMillis = 2;
         /** Attributes that can be used with a PtrClassicHeader.
            <p>Includes the following attributes:</p>
            <table>
@@ -153,7 +296,7 @@ containing a value of this type.
            @see #PtrClassicHeader_ptr_rotate_ani_time
          */
         public static final int[] PtrClassicHeader = {
-            0x7f010000
+            0x7f010005
         };
         /**
           <p>This symbol is the offset where the {@link com.chanven.lib.cptr.test.R.attr#ptr_rotate_ani_time}
@@ -194,8 +337,8 @@ containing a value of this type.
            @see #PtrFrameLayout_ptr_resistance
          */
         public static final int[] PtrFrameLayout = {
-            0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004,
-            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008
+            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
+            0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d
         };
         /**
           <p>This symbol is the offset where the {@link com.chanven.lib.cptr.test.R.attr#ptr_content}
@@ -320,8 +463,8 @@ containing a value of this type.
            @see #RecyclerView_stackFromEnd
          */
         public static final int[] RecyclerView = {
-            0x010100c4, 0x7f010009, 0x7f01000a, 0x7f01000b,
-            0x7f01000c
+            0x010100c4, 0x7f01000e, 0x7f01000f, 0x7f010010,
+            0x7f010011
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#orientation}

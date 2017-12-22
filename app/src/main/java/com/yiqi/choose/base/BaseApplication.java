@@ -1,7 +1,5 @@
 package com.yiqi.choose.base;
 
-import com.alibaba.baichuan.android.trade.AlibcTradeSDK;
-import com.alibaba.baichuan.android.trade.callback.AlibcTradeInitCallback;
 import com.mob.MobApplication;
 
 /**
@@ -34,19 +32,19 @@ public class BaseApplication extends MobApplication {
 //        Picasso.setSingletonInstance(picasso);
 
 
-        AlibcTradeSDK.asyncInit(this, new AlibcTradeInitCallback() {
-            @Override
-            public void onSuccess() {
-                //初始化成功，设置相关的全局配置参数
-               // System.out.println("11111");
-                // ...
-            // AlibcTradeCommon.turnOnDebug();
-            }
-
-            @Override
-            public void onFailure(int code, String msg) {
-                //初始化失败，可以根据code和msg判断失败原因，详情参见错误说明
-            }
-        });
+//        AlibcTradeSDK.asyncInit(this, new AlibcTradeInitCallback() {
+//            @Override
+//            public void onSuccess() {
+//                //初始化成功，设置相关的全局配置参数
+//               // System.out.println("11111");
+//                // ...
+//            // AlibcTradeCommon.turnOnDebug();
+//            }
+//
+//            @Override
+//            public void onFailure(int code, String msg) {
+//                //初始化失败，可以根据code和msg判断失败原因，详情参见错误说明
+//            }
+//        });
     }
 }

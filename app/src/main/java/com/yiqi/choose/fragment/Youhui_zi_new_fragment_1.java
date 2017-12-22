@@ -148,7 +148,7 @@ public class Youhui_zi_new_fragment_1 extends BaseFragment1_coupons {
     private int ziTypeNumber;
 
 
-    private boolean hasBanner;
+   // private boolean hasBanner;
 
     private boolean hasLoadMoreFinish = true;
 
@@ -186,7 +186,7 @@ public class Youhui_zi_new_fragment_1 extends BaseFragment1_coupons {
         ziList = new ArrayList<Object>();
         mTestRecyclerViewFrame.disableWhenHorizontalMove(true);
         mTestRecyclerViewFrame.setLoadMoreEnable(false);
-        hasBanner = false;
+      //  hasBanner = false;
         hasLoadMoreFinish = true;
         alibcTaokeParams = new AlibcTaokeParams(SplashActicity1.mPId, "", "");
         alibcShowParams = new AlibcShowParams(OpenType.Native, false);
@@ -194,9 +194,9 @@ public class Youhui_zi_new_fragment_1 extends BaseFragment1_coupons {
         exParams = new HashMap<>();
         exParams.put("isv_code", "appisvcode");
         exParams.put("alibaba", "阿里巴巴");//自定义参数部分，可任意增删改
-
+        singleLayoutAdapter=null;
         goodsAdapter=null;
-
+        mSingleLayoutTypeAdapter=null;
         srceenWidth = AndroidUtils.getWidth(getActivity());
         params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.width = (int) (srceenWidth * 0.361);
@@ -257,7 +257,39 @@ public class Youhui_zi_new_fragment_1 extends BaseFragment1_coupons {
             }
         });
     }
+    @Override
+    public void lazyLoad(String id) {
+        if (!isPrepared || mHasLoadedOnce || mCpRlImage.getVisibility() == View.VISIBLE) {
+            return;
+        }
+        typeId = id;
+        initTypeFive(getActivity(), screenWidth);
+        adapter.addAdapter(mSingleLayoutTypeAdapter);
+        initBannerList(getActivity(), screenWidth, (MainAcitivity1) getActivity());
+        adapter.addAdapter(0, singleLayoutAdapter);
+        mAdapter = new RecyclerAdapterWithHF(adapter);
+        mRecyclerview.setAdapter(mAdapter);
+        loadingData();
 
+    }
+    private void loadingData() {
+        if (NetJudgeUtils.getNetConnection(getActivity())) {
+            mCpRlImage.setVisibility(View.VISIBLE);
+            mHomeZiNowefi.setVisibility(View.GONE);
+            mHomeZiNogoods.setVisibility(View.GONE);
+            mHomeArraw.setVisibility(View.GONE);
+            mHomeRlArrow.setVisibility(View.GONE);
+            mCpImage.innerStart();
+            if (typeId.equals("0")) {
+                //banner
+             ThreadPollFactory.getNormalPool().execute(new BannerThread(getActivity(), hd));
+            }
+            ThreadPollFactory.getNormalPool().execute(new goodsThread(SplashActicity1.mQuanId, "",1, keyword, typeId, orders));
+
+        } else {
+            invisbableView1();
+        }
+    }
     private void initListener() {
 
         mTestRecyclerViewFrame.setPtrHandler(new PtrDefaultHandler() {
@@ -432,38 +464,9 @@ public class Youhui_zi_new_fragment_1 extends BaseFragment1_coupons {
 
     }
 
-    @Override
-    public void lazyLoad(String id) {
-        if (!isPrepared || mHasLoadedOnce || mCpRlImage.getVisibility() == View.VISIBLE) {
-            return;
-        }
-        typeId = id;
-        initTypeFive(getActivity(), screenWidth);
-        adapter.addAdapter(mSingleLayoutTypeAdapter);
-        mAdapter = new RecyclerAdapterWithHF(adapter);
-        mRecyclerview.setAdapter(mAdapter);
-        loadingData();
 
-    }
 
-    private void loadingData() {
-        if (NetJudgeUtils.getNetConnection(getActivity())) {
-            mCpRlImage.setVisibility(View.VISIBLE);
-            mHomeZiNowefi.setVisibility(View.GONE);
-            mHomeZiNogoods.setVisibility(View.GONE);
-            mHomeArraw.setVisibility(View.GONE);
-            mHomeRlArrow.setVisibility(View.GONE);
-            mCpImage.innerStart();
-            if (typeId.equals("0")) {
-                //banner
-                ThreadPollFactory.getNormalPool().execute(new BannerThread(getActivity(), hd));
-            }
-            ThreadPollFactory.getNormalPool().execute(new goodsThread(SplashActicity1.mQuanId, "",1, keyword, typeId, orders));
 
-        } else {
-            invisbableView1();
-        }
-    }
 
     private void invisableView() {
         mHomeRlArrow.setVisibility(View.VISIBLE);
@@ -521,19 +524,16 @@ public class Youhui_zi_new_fragment_1 extends BaseFragment1_coupons {
                                     BannerInfoNew.class);
                             invisableView();
                             if (bannerList.size() > 0) {
-                                if (hasBanner) {
                                     singleLayoutAdapter.notifyDataSetChanged();
-                                } else {
-                                    initBannerList(getActivity(), screenWidth, (MainAcitivity1) getActivity());
-                                    adapter.addAdapter(0, singleLayoutAdapter);
+                              //      initBannerList(getActivity(), screenWidth, (MainAcitivity1) getActivity());
+//                                    adapter.addAdapter(0, singleLayoutAdapter);
                                     singleLayoutAdapter.bannerStartPlay();
                                     initBannerListener();
-                                    hasBanner = true;
-                                }
+
+
                             } else {
-                                if (hasBanner) {
                                     singleLayoutAdapter.notifyDataSetChanged();
-                                }
+
                             }
 
                         }

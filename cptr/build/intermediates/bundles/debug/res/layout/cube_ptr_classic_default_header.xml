@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
 
               android:gravity="bottom" >
 
@@ -43,6 +44,8 @@
             android:layout_marginLeft="-35dp"
             android:src="@drawable/arrow" />
 
+        <!--
+
         <ProgressBar
 
             android:id="@+id/ptr_classic_header_rotate_view_progressbar"
@@ -52,6 +55,19 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="-40dp"
             android:visibility="invisible" />
+            -->
+        <com.chanven.lib.cptr.circle.CircularProgressView
+            android:id="@+id/cp_image_head"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-40dp"
+            android:layout_alignLeft="@id/ptr_classic_header_rotate_view_header_text"
+            android:visibility="invisible"
+            app:angleAnimationDurationMillis="@integer/circular_default_angleAnimationDurationMillis"
+            app:borderWidth="@dimen/circular_default_border_width"
+            app:colorSequence="@array/circular_default_color_sequence"
+            app:sweepAnimationDurationMillis="@integer/circular_default_sweepAnimationDuration"/>
     </RelativeLayout>
 
 </LinearLayout>
