@@ -206,6 +206,7 @@ public class PhoneActivity extends BaseActivity {
                 Map<String, String> params = new HashMap<>();
                 params.put("mobile", phone);
                 params.put("type","1");
+                params.put("code",SplashActicity1.mQuanId);
                 params = BaseMap.getMapAll(params);
                 String url="";
                 if(getResources().getString(R.string.appurl).contains("120.26.244.207")){

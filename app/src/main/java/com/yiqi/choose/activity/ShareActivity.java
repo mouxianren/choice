@@ -203,7 +203,12 @@ public class ShareActivity extends BaseActivity{
             public void onClick(View v) {
                 if(BooleanThread.toService){
                     if (NetJudgeUtils.getNetConnection(ShareActivity.this)){
-                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2));
+                        String rCode="";
+                        if(!TextUtils.isEmpty((String)SharedPfUtils.getData(ShareActivity.this,"newQuanId",""))){
+                            rCode=(String)SharedPfUtils.getData(ShareActivity.this,"newQuanId","");
+                        }
+
+                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2,rCode));
                     }
                 }
                 shareDemo(QQ.NAME);
@@ -213,8 +218,12 @@ public class ShareActivity extends BaseActivity{
             @Override
             public void onClick(View v) {
                 if(BooleanThread.toService){
+                    String rCode="";
+                    if(!TextUtils.isEmpty((String)SharedPfUtils.getData(ShareActivity.this,"newQuanId",""))){
+                        rCode=(String)SharedPfUtils.getData(ShareActivity.this,"newQuanId","");
+                    }
                     if (NetJudgeUtils.getNetConnection(ShareActivity.this)){
-                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2));
+                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2,rCode));
                     }
                 }
                 shareDemo(QZone.NAME);
@@ -224,8 +233,12 @@ public class ShareActivity extends BaseActivity{
             @Override
             public void onClick(View v) {
                 if(BooleanThread.toService){
+                    String rCode="";
+                    if(!TextUtils.isEmpty((String)SharedPfUtils.getData(ShareActivity.this,"newQuanId",""))){
+                        rCode=(String)SharedPfUtils.getData(ShareActivity.this,"newQuanId","");
+                    }
                     if (NetJudgeUtils.getNetConnection(ShareActivity.this)){
-                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2));
+                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2,rCode));
                     }
                 }
                 shareDemo(Wechat.NAME);
@@ -235,8 +248,12 @@ public class ShareActivity extends BaseActivity{
             @Override
             public void onClick(View v) {
                 if(BooleanThread.toService){
+                    String rCode="";
+                    if(!TextUtils.isEmpty((String)SharedPfUtils.getData(ShareActivity.this,"newQuanId",""))){
+                        rCode=(String)SharedPfUtils.getData(ShareActivity.this,"newQuanId","");
+                    }
                     if (NetJudgeUtils.getNetConnection(ShareActivity.this)){
-                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2));
+                        ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(ShareActivity.this,2,rCode));
                     }
                 }
                 shareDemo(WechatMoments.NAME);

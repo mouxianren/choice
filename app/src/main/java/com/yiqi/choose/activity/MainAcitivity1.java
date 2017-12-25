@@ -305,7 +305,11 @@ public class MainAcitivity1 extends FragmentActivity {
               if(SplashActicity1.isInvite){
                   if(BooleanThread.toService){
                       if (NetJudgeUtils.getNetConnection(MainAcitivity1.this)){
-                          ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(MainAcitivity1.this,1));
+                          String rCode="";
+                          if(!TextUtils.isEmpty((String)SharedPfUtils.getData(MainAcitivity1.this,"newQuanId",""))){
+                              rCode=(String)SharedPfUtils.getData(MainAcitivity1.this,"newQuanId","");
+                          }
+                          ThreadPollFactory.getNormalPool().execute(new StatisticsShareThread(MainAcitivity1.this,1,rCode));
                       }
                   }
               }

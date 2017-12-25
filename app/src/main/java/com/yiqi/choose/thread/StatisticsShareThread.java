@@ -20,10 +20,12 @@ public class StatisticsShareThread implements Runnable{
 //    2：app分享数
     private Context context;
     private int type;
+    private String rCode;
 
-    public StatisticsShareThread(Context context,int type){
+    public StatisticsShareThread(Context context,int type,String rCode){
         this.context=context;
         this.type=type;
+        this.rCode=rCode;
     }
     @Override
     public void run() {
@@ -31,6 +33,7 @@ public class StatisticsShareThread implements Runnable{
             Map<String, String> params = new HashMap<>();
             params.put("type",type+"");
             params.put("code", SplashActicity1.mQuanId);
+            params.put("rCode", rCode);
             params = BaseMap.getMapAll(params);
             String url = "";
             url = context.getString(R.string.appurltest) + "/count/actionclick" + "?stamp=" + UrlUtils.getTime() + "&encode=" + UrlUtils.getEncode();
