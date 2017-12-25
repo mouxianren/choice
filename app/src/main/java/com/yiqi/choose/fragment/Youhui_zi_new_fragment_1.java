@@ -219,8 +219,9 @@ public class Youhui_zi_new_fragment_1 extends BaseFragment1_coupons {
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 final Picasso picasso = Picasso.with(getActivity());
-                if (newState == 0 || newState == 1) {
+                if (newState == RecyclerView.SCROLL_STATE_IDLE || newState ==RecyclerView.SCROLL_STATE_DRAGGING) {
                     picasso.resumeTag(getActivity());
+
                 } else {
                     picasso.pauseTag(getActivity());
                 }

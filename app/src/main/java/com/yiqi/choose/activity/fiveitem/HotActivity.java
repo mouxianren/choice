@@ -567,32 +567,32 @@ public class HotActivity extends BaseActivity {
         public View getView(final int position, View convertView,
                             ViewGroup parent) {
             View view = null;
-            GoodHodler holder = null;
+           GoodHodler holder = null;
             if (convertView == null || convertView.getTag() == null) {
                 view = inflater.inflate(R.layout.goodnew_item, null);
                 holder = new GoodHodler();
                 holder.good_img = (ImageView) view.findViewById(R.id.good_img);
                 holder.goods_desc = (TextView) view.findViewById(R.id.goods_desc);
                 holder.goods_discount_price = (TextView) view.findViewById(R.id.goods_discount_price);
-               // holder.goods_ori_price = (TextView) view.findViewById(R.id.goods_ori_price);
+                // holder.goods_ori_price = (TextView) view.findViewById(R.id.goods_ori_price);
                 holder.tv_chengji = (TextView) view.findViewById(R.id.tv_chengji);
-                holder.home_temai_shopname=(TextView)view.findViewById(R.id.home_temai_shopname);
-                holder.home_temai_discount=(TextView)view.findViewById(R.id.home_temai_discount);
-//                holder.goods_ori_price.getPaint().setFlags(
-//                        Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
+                holder.home_temai_shopname = (TextView) view.findViewById(R.id.home_temai_shopname);
+                holder.home_temai_discount = (TextView) view.findViewById(R.id.home_temai_discount);
+                //                holder.goods_ori_price.getPaint().setFlags(
+                //                        Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
                 view.setTag(holder);
             } else {
                 view = convertView;
                 holder = (GoodHodler) convertView.getTag();
             }
+
             final GoodsInfo goodsInfo;
             goodsInfo = (GoodsInfo) goodList.get(position);
             holder.good_img.setLayoutParams(params);
-
             PicassoUtils.loadImageWithHolderAndError(context, goodsInfo.getGoodsImage(), R.mipmap.picture, R.mipmap.picture, holder.good_img);
             holder.goods_desc.setText(goodsInfo.getTitle());
             holder.goods_discount_price.setText(goodsInfo.getPrice());
-            //holder.goods_ori_price.setText("￥" + goodsInfo.getOldPrice());
+            // holder.goods_ori_price.setText("￥" + goodsInfo.getOldPrice());
             holder.tv_chengji.setText("已售" + goodsInfo.getSellCount() + "件");
             holder.home_temai_discount.setText(goodsInfo.getSavePrice());
             holder.home_temai_shopname.setText(goodsInfo.getGoodsShop());
@@ -600,11 +600,12 @@ public class HotActivity extends BaseActivity {
         }
 
     }
+
     class GoodHodler {
         ImageView good_img;
         TextView goods_desc;
         TextView goods_discount_price;
-        //TextView goods_ori_price;
+        //    TextView goods_ori_price;
         TextView tv_chengji;
         TextView home_temai_shopname;
         TextView home_temai_discount;

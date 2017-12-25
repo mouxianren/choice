@@ -2,7 +2,6 @@ package com.yiqi.choose.activity.fiveitem;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.graphics.Paint;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -86,6 +85,9 @@ public class JuhuasuanActivity extends BaseActivity {
     private AlibcTaokeParams alibcTaokeParams = null;//淘客参数，包括pid，unionid，subPid
 
     private Handler hd;
+
+    private LinearLayout.LayoutParams params;
+    private int srceenWidth;
     //ClipboardManager cmb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +107,11 @@ public class JuhuasuanActivity extends BaseActivity {
         exParams.put("isv_code", "appisvcode");
         exParams.put("alibaba", "阿里巴巴");//自定义参数部分，可任意增删改
         //cmb = (ClipboardManager)getSystemService(Context.CLIPBOARD_SERVICE);
+        srceenWidth = AndroidUtils.getWidth(JuhuasuanActivity.this);
 
+        params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.width = (int) (srceenWidth * 0.361);
+        params.height = (int) (srceenWidth * 0.361);
         hd=new MyHandler(JuhuasuanActivity.this);
         home_jinxuan_listView = (XListView) this.findViewById(R.id.home_jinxuan_listview);
         home_jinxuan_nogoods = (LinearLayout) this.findViewById(R.id.home_jinxuan_nogoods);
@@ -550,30 +556,32 @@ public class JuhuasuanActivity extends BaseActivity {
         public View getView(final int position, View convertView,
                             ViewGroup parent) {
             View view = null;
-         GoodHodler holder = null;
+           GoodHodler holder = null;
             if (convertView == null || convertView.getTag() == null) {
-                view = inflater.inflate(R.layout.layout_youhui_item, null);
+                view = inflater.inflate(R.layout.goodnew_item, null);
                 holder = new GoodHodler();
                 holder.good_img = (ImageView) view.findViewById(R.id.good_img);
                 holder.goods_desc = (TextView) view.findViewById(R.id.goods_desc);
                 holder.goods_discount_price = (TextView) view.findViewById(R.id.goods_discount_price);
-                holder.goods_ori_price = (TextView) view.findViewById(R.id.goods_ori_price);
+                // holder.goods_ori_price = (TextView) view.findViewById(R.id.goods_ori_price);
                 holder.tv_chengji = (TextView) view.findViewById(R.id.tv_chengji);
-                holder.home_temai_shopname=(TextView)view.findViewById(R.id.home_temai_shopname);
-                holder.home_temai_discount=(TextView)view.findViewById(R.id.home_temai_discount);
-                holder.goods_ori_price.getPaint().setFlags(
-                        Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
+                holder.home_temai_shopname = (TextView) view.findViewById(R.id.home_temai_shopname);
+                holder.home_temai_discount = (TextView) view.findViewById(R.id.home_temai_discount);
+                //                holder.goods_ori_price.getPaint().setFlags(
+                //                        Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
                 view.setTag(holder);
             } else {
                 view = convertView;
                 holder = (GoodHodler) convertView.getTag();
             }
+
             final GoodsInfo goodsInfo;
             goodsInfo = (GoodsInfo) goodList.get(position);
-            PicassoUtils.loadImageWithHolderAndError(JuhuasuanActivity.this, goodsInfo.getGoodsImage(), R.mipmap.picture, R.mipmap.picture, holder.good_img);
+            holder.good_img.setLayoutParams(params);
+            PicassoUtils.loadImageWithHolderAndError(context, goodsInfo.getGoodsImage(), R.mipmap.picture, R.mipmap.picture, holder.good_img);
             holder.goods_desc.setText(goodsInfo.getTitle());
             holder.goods_discount_price.setText(goodsInfo.getPrice());
-            holder.goods_ori_price.setText("￥" + goodsInfo.getOldPrice());
+            // holder.goods_ori_price.setText("￥" + goodsInfo.getOldPrice());
             holder.tv_chengji.setText("已售" + goodsInfo.getSellCount() + "件");
             holder.home_temai_discount.setText(goodsInfo.getSavePrice());
             holder.home_temai_shopname.setText(goodsInfo.getGoodsShop());
@@ -581,11 +589,12 @@ public class JuhuasuanActivity extends BaseActivity {
         }
 
     }
+
     class GoodHodler {
         ImageView good_img;
         TextView goods_desc;
         TextView goods_discount_price;
-        TextView goods_ori_price;
+        //    TextView goods_ori_price;
         TextView tv_chengji;
         TextView home_temai_shopname;
         TextView home_temai_discount;
