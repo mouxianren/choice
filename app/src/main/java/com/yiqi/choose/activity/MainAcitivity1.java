@@ -106,6 +106,8 @@ public class MainAcitivity1 extends FragmentActivity {
     public static int choosePosition;
     public static int allGoodsNumbers=0;
 
+    private boolean splashInvite=false;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -119,6 +121,8 @@ public class MainAcitivity1 extends FragmentActivity {
         keepFontSize();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        splashInvite=SplashActicity1.isInvite;
+
 
         maActivity1=MainAcitivity1.this;
         initViews();
@@ -163,7 +167,7 @@ public class MainAcitivity1 extends FragmentActivity {
 
 
         mTabLayout = (TabLayout) findViewById(R.id.mainactivity_tablayout);
-        if(!SplashActicity1.isInvite){
+        if(!splashInvite){
             setTabs(mTabLayout, this.getLayoutInflater(), TAB_TITLES, TAB_IMGS, 0);
         }else{
             setTabs(mTabLayout, this.getLayoutInflater(), TAB_TITLES_SHARE, TAB_IMGS_SHARE, 0);
@@ -178,7 +182,7 @@ public class MainAcitivity1 extends FragmentActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
 
 
-        mTabLayout.setOnTabSelectedListener(new ViewPagerOnTabSelectedListener(mViewPager));
+        mTabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
         if (SharedPfUtils.getData(MainAcitivity1.this, "xiaoxi", "").equals("2")) {
             PushManager.getInstance().turnOffPush(MainAcitivity1.this);
         } else {
@@ -200,7 +204,7 @@ public class MainAcitivity1 extends FragmentActivity {
 
         @Override
         public void onTabSelected(TabLayout.Tab tab) {
-            if(!SplashActicity1.isInvite){
+            if(!splashInvite){
                 choosePosition=tab.getPosition();
                 //这里使用到反射，拿到Tab对象后获取Class
                 Class c = tab.getClass();
@@ -302,7 +306,7 @@ public class MainAcitivity1 extends FragmentActivity {
                 }
             }
           if(tab.getPosition()==2){
-              if(SplashActicity1.isInvite){
+              if(splashInvite){
                   if(BooleanThread.toService){
                       if (NetJudgeUtils.getNetConnection(MainAcitivity1.this)){
                           String rCode="";
@@ -324,7 +328,7 @@ public class MainAcitivity1 extends FragmentActivity {
             //这里使用到反射，拿到Tab对象后获取Class
             //根据已选中是否为购物车来做判断 除了购物车且已登陆状态要变 其他都是不变
             //这里使用到反射，拿到Tab对象后获取Class
-            if(!SplashActicity1.isInvite){
+            if(!splashInvite){
                 unclickPostion = tab.getPosition();
                 Class c = tab.getClass();
                 try {
@@ -374,7 +378,7 @@ public class MainAcitivity1 extends FragmentActivity {
 
         @Override
         public void onTabReselected(TabLayout.Tab tab) {
-            if(!SplashActicity1.isInvite){
+            if(!splashInvite){
                 if (JudgeLoginTaobao.isLogin() && tab.getPosition() == 2) {
                     showCart();
                 }
@@ -637,7 +641,7 @@ public class MainAcitivity1 extends FragmentActivity {
 
         @Override
         public Fragment getItem(int position) {
-            if(!SplashActicity1.isInvite){
+            if(!splashInvite){
                 return TAB_FRAGMENTS[position];
             }else{
                 return TAB_FRAGMENTS_SHARE[position];

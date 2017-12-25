@@ -421,6 +421,7 @@
             android:id="@+id/all_search_rl_listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <!--
 
             <com.jcodecraeer.xrecyclerview.XRecyclerView
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -436,6 +437,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true">
             </com.jcodecraeer.xrecyclerview.XRecyclerView>
+       <!-->
             <ImageView
                 android:id="@+id/all_search_home_arraw"
                 android:layout_alignParentRight="true"

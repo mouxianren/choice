@@ -360,7 +360,14 @@
                     "endOffset": 1693
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 327,
+                        "endColumn": 74,
+                        "endOffset": 397
+                    }
                 }
             },
             {
@@ -372,7 +379,14 @@
                     "endOffset": 1769
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 402,
+                        "endColumn": 75,
+                        "endOffset": 473
+                    }
                 }
             },
             {
@@ -384,7 +398,14 @@
                     "endOffset": 1841
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 478,
+                        "endColumn": 71,
+                        "endOffset": 545
+                    }
                 }
             },
             {
@@ -396,7 +417,14 @@
                     "endOffset": 1907
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 65,
+                        "endOffset": 611
+                    }
                 }
             },
             {
@@ -465,7 +493,14 @@
                     "endOffset": 2188
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 60,
+                        "endOffset": 112
+                    }
                 }
             },
             {
@@ -477,7 +512,14 @@
                     "endOffset": 2241
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 591,
+                        "endColumn": 57,
+                        "endOffset": 644
+                    }
                 }
             },
             {
@@ -489,7 +531,14 @@
                     "endOffset": 2297
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 411,
+                        "endColumn": 60,
+                        "endOffset": 467
+                    }
                 }
             },
             {
@@ -501,7 +550,14 @@
                     "endOffset": 2352
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 531,
+                        "endColumn": 59,
+                        "endOffset": 586
+                    }
                 }
             },
             {
@@ -513,7 +569,14 @@
                     "endOffset": 2402
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 117,
+                        "endColumn": 49,
+                        "endOffset": 162
+                    }
                 }
             },
             {
@@ -525,7 +588,14 @@
                     "endOffset": 2465
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 167,
+                        "endColumn": 62,
+                        "endOffset": 225
+                    }
                 }
             },
             {
@@ -537,7 +607,14 @@
                     "endOffset": 2525
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 346,
+                        "endColumn": 59,
+                        "endOffset": 401
+                    }
                 }
             },
             {
@@ -549,7 +626,14 @@
                     "endOffset": 2580
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 54,
+                        "endOffset": 341
+                    }
                 }
             },
             {
@@ -561,7 +645,14 @@
                     "endOffset": 2641
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 230,
+                        "endColumn": 60,
+                        "endOffset": 286
+                    }
                 }
             },
             {
@@ -573,7 +664,14 @@
                     "endOffset": 2695
                 },
                 "from": {
-                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml"
+                    "file": "/Users/moumou/Downloads/挑一挑/cptr/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 472,
+                        "endColumn": 58,
+                        "endOffset": 526
+                    }
                 }
             }
         ]

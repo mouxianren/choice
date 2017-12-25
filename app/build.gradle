@@ -120,7 +120,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:design:25.0.1'
-    compile 'com.umeng.analytics:analytics:latest.integration'
+   // compile 'com.umeng.analytics:analytics:latest.integration'
     testCompile 'junit:junit:4.12'
     compile files('libs/GetuiSDK2.10.2.0.jar')
     //    //fastjson
@@ -177,7 +177,6 @@ dependencies {
     compile files('libs/ShareSDK-Wechat-Core-3.1.0.jar')
     compile files('libs/ShareSDK-Wechat-Favorite-3.1.0.jar')
     compile files('libs/ShareSDK-Wechat-Moments-3.1.0.jar')
-    compile project(':xrecyclerview')
     compile('com.alibaba.android:vlayout:1.2.6@aar') {
         transitive = true
     }
